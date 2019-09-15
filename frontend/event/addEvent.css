@@ -1,0 +1,110 @@
+body {
+	/* background-image: url("../image/login_background.png"); */
+	background-size: cover;
+	background-color: #1a73e8;
+	font-family: 'RaleWay';
+	color: #1a73e8;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	font-family: '서울남산 장체B';
+	user-select: none;
+}	
+
+input[type='text'] {
+	font-size: 1.2rem;	
+	width: 100%;
+	height: 3rem;
+	text-align: left;
+	padding: 0;
+	border: none;
+	border-radius: 15px;
+	text-align: center;
+	box-shadow: 0 10px 20px -9px rgba(0,0,0,.75);
+}
+
+button {
+	margin-top: 1%;
+	margin-left: 75%;
+	text-align: center;
+	border: none;
+	border-radius: 10px;
+	width: 5%;
+	height: auto;
+	font-size: 1rem;
+	font-family: "서울남산 장체B";
+	color: #1a73e8;
+	background-color: white;
+}
+
+input[type='text']:focus{
+	outline: none;
+}
+
+input[type='file'] {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	padding: 0;
+	margin: -1px;
+	overflow: hidden;
+	clip:rect(0,0,0,0);
+	border: 0;
+}
+
+.add_container {
+	height: 100%;
+}
+
+.title {
+	background-color: white;
+	margin-top: 5%;
+	margin-left: 30%;
+	width: 40%;
+	border-radius: 15px;
+}
+
+.date_form {
+	margin-top: 3%;
+	width: 20%;
+	margin-left: 70%;
+	height: 5%;
+}
+
+.start_date,
+.end_date {
+	margin-top: 5%;	 
+}
+
+.content_form {
+	margin-top : 2%;
+	margin-left : 10%;
+	width: 80%;
+}
+
+.content {
+	font-family: '서울남산 장체B';
+	font-size: 1.2rem;	
+	width: 100%;
+	height: 3rem;
+	text-align: left;
+	padding: 0;
+	border: none;
+	border-radius: 15px;
+	text-align: center;
+	box-shadow: 0 10px 20px -9px rgba(0,0,0,.75);
+	resize: vertical; /* 상하만 가능 */
+	padding-top: 2%;
+}
+
+.upload_form {
+	margin-top: 1%;
+	margin-left: 10%;
+	border-radius: 10px;
+	padding-top: 0.3%;
+	padding-bottom: 0.3%;
+	margin-bottom: 10%;
+	background-color: white;	
+	width: 10%;
+	box-shadow: 0 10px 20px -9px rgba(0,0,0,.75);
+}

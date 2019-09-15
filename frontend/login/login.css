@@ -1,0 +1,76 @@
+body {
+	background-image: url("../image/login_background.png");
+	background-size: cover;
+	background-color: #1a73e8;
+	font-family: 'RaleWay';
+	color: #1a73e8;
+	text-align: center;
+	padding: 0;
+	margin: 0;
+	font-family: '서울남산 장체B';
+	user-select: none;
+}
+
+input[type='text'],
+input[type='password'] {
+	font-size: 1.2rem;
+	width: 100%;
+	height: 3rem;
+	text-align: left;
+	padding: 0;
+	border: none;
+}
+
+input[type='text']:focus,
+input[type='password']:focus {
+	outline: none;
+}
+
+button {
+	padding: 1%;
+	text-align: center;
+	border: none;
+	border-radius: 10px;
+	width: 50%;
+	height: auto;
+	font-size: 1.5rem;
+	font-family: "서울남산 장체B";
+	font-weight: bold;
+	color: white;
+	background-color: #1a73e8;
+}
+
+button:hover {
+	cursor: pointer;
+}
+
+.login_container {
+	background-color: white;
+	border-radius: 15px;
+	margin-top: 5%;
+	margin-left: 30%;
+	padding-top: 4%;
+	padding-bottom: 4%;
+	width: 40%;
+	box-shadow: 0 10px 20px -9px rgba(0,0,0,.75)
+}
+
+.login_form {
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 10%;
+	/* margin-bottom: 10%; */
+	border-bottom: 1.5px solid #1a73e8;
+	padding-top: 2%;
+}
+
+.sign_up {
+	padding-top: 5%;
+	padding-bottom: 5%;
+	margin-left: 40%;
+	width: 20%;
+}
+
+.sign_up:hover {
+	cursor: pointer;
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="portfolio" content="portfolio management service">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>portFolio</title>
+
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="login.js"></script>
+</head>
+<body>
+	
+	<div class="login_container">
+		<h1>
+			portFolio
+		</h1>
+		<div class="login_form">
+				<input type="text" name="user_id" id="user_id" placeholder="ID" autocomplete=off>
+		</div>
+		<div class="login_form">
+				<input type="password" name="user_pw" id="user_pw" placeholder="PW">
+		</div>
+		<div class="sign_up" onclick='location.href="http://127.0.0.1:5500/signUp/signUp.html"'>
+			계정 생성
+		</div>
+		<button name="login" id="login">로그인</button>
+	</div>
+	
+</body>
+</html>
+
+<script>
+	const loginBtn = document.getElementById("login");
+	const idText = document.getElementById("user_id");
+	const pwText = document.getElementById("user_pw");
+
+	idText.addEventListener('keyup', (event) => {
+		if (event === 13) {
+			login();
+		}
+	});
+
+	pwText.addEventListener('keyup', (event) => {
+		if (event.keyCode === 13) {
+			login();
+		}
+	});
+
+	loginBtn.addEventListener('click', login);
+	
+</script>

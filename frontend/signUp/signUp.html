@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="portfolio" content="portfolio management service">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>portFolio</title>
+
+	<link rel="stylesheet" type="text/css" href="signUp.css">
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="signUp.js"></script>
+</head>
+<body>
+	<div class="signup_form">
+		<div class="subtitle">
+			회원가입
+		</div>
+		<div>
+			<div class="outline">
+				<input type="text" name="name" id="name" placeholder="NAME" autocomplete="off">
+			</div>
+			<div class="outline">
+				<input type="text" name="user_id" id="user_id" placeholder="ID" autocomplete="off">
+			</div>
+			<div class="outline">
+				<input type="password" name="user_pw" id="user_pw" placeholder="PW" autocomplete="off">
+			</div>
+		</div>
+
+		<div class="signup_btn" onclick="signUp()">
+			signup
+		</div>
+	</div>
+</body>
+</html>
