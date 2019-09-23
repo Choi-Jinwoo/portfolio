@@ -13,7 +13,7 @@ const showEvents = () => {
 				const title = data.data.events[i].title;
 				const start_date = data.data.events[i].start_date;
 				const end_date = data.data.events[i].end_date;
-				const tag = `<div class="event" id="event${i}"><div class="data_title">${title}</div><div>${start_date} ~ ${end_date}</div></div>`
+				const tag = `<div><div class="event" id="event${i}"><div class="data_title">${title}</div><div>${start_date} ~ ${end_date}</div></div>`
 				$("body").append(tag);
 				
 			 	$(document).on("click",`#event${i}`,function(){ 

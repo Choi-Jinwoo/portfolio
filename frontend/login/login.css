@@ -1,6 +1,8 @@
 body {
 	background-image: url("../image/login_background.png");
 	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 	background-color: #1a73e8;
 	font-family: 'RaleWay';
 	color: #1a73e8;

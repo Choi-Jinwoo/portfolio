@@ -61,6 +61,8 @@ module.exports = (sequelize, DataTypes) => {
 	Event.deleteEvent = (id) => Event.destroy({ where : { id } });
 
 	Event.updateEvent = (id, data) => Event.update(data, { where : id });
-
+	
+	Event.deleteEvent = (id) => Event.destroy({ where : { id } });
+	
 	return Event;
 }

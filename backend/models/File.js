@@ -28,16 +28,22 @@ module.exports = (sequelize, DataTypes) => {
 	File.createFile = (data) => File.create({
 		file_name : data.file_name,
 		event_id : data.event_id,
-	})
+	});
 
 	File.getFilesByEventId = (event_id) => File.findAll({
 		where : { event_id },
 		raw : true,
-	})
+	});
 
 	File.getFile = (id) => File.findOne({
 		where : { id },
 		raw : true,
-	})
+	});
+
+	File.deleteFileByEventId = (event_id) => File.destroy({
+		where : { event_id },
+		raw : true,
+	});
+	
 	return File;
 }

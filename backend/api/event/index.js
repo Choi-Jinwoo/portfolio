@@ -4,6 +4,7 @@ const router = require('express').Router();
 const upload = require('../../lib/configMulter');
 
 router.get('/', authMiddleware, eventCtrl.getEvents);
-router.post('/add', authMiddleware, eventCtrl.addEvent);
-//upload.array('files')
+router.post('/', authMiddleware, eventCtrl.addEvent);
+router.delete('/', authMiddleware, eventCtrl.deleteEvent);
+
 module.exports = router;

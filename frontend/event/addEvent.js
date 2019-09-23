@@ -12,7 +12,7 @@ const addEvent = () => {
 	
 	$.ajax({
 		type:"POST",
-		url:"http://localhost:3000/event/add",
+		url:"http://localhost:3000/event",
 		beforeSend : function(xhr){
 			xhr.setRequestHeader("token", localStorage.token);
 		},

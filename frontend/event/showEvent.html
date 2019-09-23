@@ -20,6 +20,9 @@
 	<div class="home" onclick='location.href = "http://127.0.0.1:5500/event/showEvents.html"'>
 		portFolio
 	</div>
+	<button class="deleteBtn" id="deleteBtn">
+		삭제
+	</button>
 	<div class="event_form">
 		<div class="title">
 			<h1 id="title">TITLE</h1>
@@ -43,5 +46,11 @@
 
 
 <script>
-	showEvent();
+	const id = showEvent();
+	console.log(id);
+	// const deleteBtn = document.getElementById("deleteBtn");
+	// console.log(deleteBtn);
+	// console.log(id);
+	// deleteBtn.addEventListener('click', deleteEvent(id));
 </script>
+

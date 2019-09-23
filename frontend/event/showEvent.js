@@ -1,4 +1,4 @@
-const showEvent = () => {
+const showEvent = async () => {
 	const queryString = getUrlParams();
 	const event_id = queryString.event_id;
 
@@ -7,8 +7,9 @@ const showEvent = () => {
 	const end_date = document.getElementById("end_date");
 	const content = document.getElementById("content");	
 	const files = document.getElementById("files");
+	let _event_id;
 
-	$.ajax({
+	await $.ajax({
 		type:"GET",
 		url:`http://localhost:3000/event?event_id=${event_id}`,
 		beforeSend : function(xhr){
@@ -29,12 +30,11 @@ const showEvent = () => {
 					file_name[0] = null;
 					file_name[1] = null;
 					file = file_name.join("");
-					//files.innerHTML = files.innerHTML + `<br><div onclick="fileDown(${data.data.event.files[i].id});">${file}</div>`;
 					files.innerHTML = files.innerHTML + `<br><a href="http://localhost:3000/file/download?file_id=${data.data.event.files[i].id}">${file}</div>`;
-
 				}
 			}
 			
+			_event_id = data.data.event.id;
 		},
 		error: (xhr, status, error) => {
 			if (error === 'Bad Request') {
@@ -42,25 +42,11 @@ const showEvent = () => {
 			} else {
 				alert('오류가 발생하였습니다.');
 			}
+			location.href = "http://127.0.0.1:5500/event/showEvents.html"
 		}  
 	});
-}
-
-function fileDown(file) {
-	// $.ajax({
-	// 	type:"GET",
-	// 	url:`http://localhost:3000/file/download?file_id=${file}`,
-	// 	beforeSend : function(xhr){
-	// 		xhr.setRequestHeader("token", localStorage.token);
-	// 	},
-	// 	dataType : "json",
-	// 	success: (data, status) => {
-	// 	},
-	// 	error: (xhr, status, error) => {
-	// 		console.log(error);
-	// 		alert("파일 다운로드에 실패하였습니다.");
-	// 	}  
-	// });
+	
+	return _event_id;
 }
 
 function getUrlParams() {
@@ -69,3 +55,22 @@ function getUrlParams() {
 	return params;
 }
 
+const deleteEvent = (id) => {
+	$.ajax({
+		type : "DELETE",
+		url : `http://localhost:3000/event?event_id=${id}`,
+		beforeSend : function(xhr){
+			xhr.setRequestHeader("token", localStorage.token);
+		},
+		dataType : "json",
+		success: (data, status) => {
+			alert('삭제 완료!');
+	},
+	error : (xhr, status, error) => {
+		console.log(error);
+			alert("삭제중 오류가 발생하였습니다.");
+			localStorage.token = null;
+			location.href="http://127.0.0.1:5500/login/login.html";
+		}
+	})
+}
