@@ -1,85 +1,84 @@
 body {
-	/* background-image: url("../image/login_background.png"); */
-	/* background-size: cover; */
-	background-color: #1a73e8;
-	font-family: 'RaleWay';
-	color: white;
-	text-align: center;
-	padding: 0;
-	margin-bottom: 3%;
-	font-family: '서울남산 장체B';
-	user-select: none;
+  /* background-image: url("../image/login_background.png"); */
+  /* background-size: cover; */
+  background-color: #1a73e8;
+  font-family: "RaleWay";
+  color: white;
+  text-align: center;
+  padding: 0;
+  margin-bottom: 3%;
+  font-family: "서울남산 장체B";
+  user-select: none;
 }
 
 .title {
-	color: white;
-	font-size: 180%;
+  color: white;
+  font-size: 180%;
 }
 
 .data_title {
-	font-size: 150%;
-	font-weight: bolder;
+  font-size: 150%;
+  font-weight: bolder;
 }
 
 .event {
-	display: inline-block;
-	margin-left: 20%;
-	margin-right: 20%;
-	background-color: white;
-	width: 40%;
-	margin-top: 1%;
-	color: #1a73e8;
-	padding-top: 1%; 
-	padding-bottom: 1%;
-	box-shadow: 0 10px 20px -9px rgba(0,0,0,.75);
-	border-radius: 15px;	
+  display: inline-block;
+  margin-left: 20%;
+  margin-right: 20%;
+  background-color: white;
+  width: 40%;
+  margin-top: 1%;
+  color: #1a73e8;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  box-shadow: 0 10px 20px -9px rgba(0, 0, 0, 0.75);
+  border-radius: 15px;
 }
 
 .event:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .add_form {
-	background-color: white;
-	color: #1a73e8;
-	margin-left: 65%;
-	width: 5%;
-	box-shadow: 0 10px 20px -9px rgba(0,0,0,.75);
-	border-radius: 8px;	
-	font-weight: bold;
+  background-color: white;
+  color: #1a73e8;
+  margin-left: 65%;
+  width: 5%;
+  box-shadow: 0 10px 20px -9px rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
+  font-weight: bold;
 }
 
 .add_form:hover {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .no_data {
-	margin-top: 2%;
-	margin-left: 30%;
-	margin-bottom: 2%;
-	padding-top: 13%;
-	padding-bottom: 13%;
-	width: 40%;
-	border-radius: 10px;
-	font-size: 150%;
-	font-weight: lighter;
-	font-size: 120%;
-	background-color: rgba(255,255,255,20%);
-
+  margin-top: 2%;
+  margin-left: 30%;
+  margin-bottom: 2%;
+  padding-top: 13%;
+  padding-bottom: 13%;
+  width: 40%;
+  border-radius: 10px;
+  font-size: 150%;
+  font-weight: lighter;
+  font-size: 120%;
+  background-color: rgba(255, 255, 255, 20%);
 }
 
 .logout {
-	background-color: #1a73e8;
-	color: white;
-	margin-left: 90%;
-	margin-top: 2%;
-	padding-top: 0.1%;
-	padding-bottom: 0.1%;
-	width: 5%;
-	box-shadow: 0 10px 20px -9px rgba(0,0,0,.75);
-	border-radius: 8px;	
+  background-color: #1a73e8;
+  color: white;
+  margin-left: 90%;
+  margin-top: 2%;
+  padding-top: 0.1%;
+  padding-bottom: 0.1%;
+  width: 5%;
+  box-shadow: 0 10px 20px -9px rgba(0, 0, 0, 0.75);
+  border-radius: 8px;
 }
 
 .logout:hover {
-	cursor: pointer;
+  cursor: pointer;
 }

@@ -1,33 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="portfolio" content="portfolio management service">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>portFolio</title>
-	<div class="logout" onclick="localStorage.token=null;console.log(localStorage.token);location.href='http://127.0.0.1:5500/login/login.html'">
-		logout
-	</div>
-	<link rel="stylesheet" type="text/css" href="showEvents.css">
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script src="showEvents.js"></script>	
-</head>
-<script>
-	if (!localStorage.token) {
-		location.href="http://127.0.0.1:5500/login/login.html";
-	}
-</script>
-<body>
-	<div class="title">
-		<h1>portFolio</h1>
-	</div>
-	<div class="add_form" onclick= 'location.href = "http://127.0.0.1:5500/event/addEvent.html"'>
-		ADD
-	</div>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="portfolio" content="portfolio management service" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>portFolio</title>
+    <div
+      class="logout"
+      onclick="localStorage.token=null;console.log(localStorage.token);location.href='http://127.0.0.1:5500/frontend/login/login.html'"
+    >
+      logout
+    </div>
+    <link rel="stylesheet" type="text/css" href="showEvents.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="showEvents.js"></script>
+  </head>
+  <script>
+    if (!localStorage.token) {
+      location.href = "http://127.0.0.1:5500/frontend/login/login.html";
+    }
+  </script>
+  <body>
+    <div class="title">
+      <h1>portFolio</h1>
+    </div>
+    <div
+      class="add_form"
+      onclick='location.href = "http://127.0.0.1:5500/frontend/event/addEvent.html"'
+    >
+      ADD
+    </div>
+  </body>
 </html>
 
 <script>
-	showEvents();
+  showEvents();
 </script>

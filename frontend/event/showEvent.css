@@ -1,91 +1,104 @@
 body {
-	/* background-image: url("../image/login_background.png"); */
-	background-size: cover;
-	background-color: #1a73e8;
-	font-family: 'RaleWay';
-	color: white;
-	text-align: center;
-	padding: 0;
-	margin: 0;
-	font-family: '서울남산 장체B';
-}	
+  /* background-image: url("../image/login_background.png"); */
+  background-size: cover;
+  background-color: #1a73e8;
+  font-family: "RaleWay";
+  color: white;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  font-family: "서울남산 장체B";
+}
 
 div {
-	color: #1a73e8;
+  color: #1a73e8;
 }
 
 .title {
-	margin-top: 2%;
-	box-shadow: 0 10px 20px -9px rgba(0,0,0,.75);
-	background-color: white;
-	margin-left: 30%;
-	width: 40%;
-	border-radius: 15px;
+  margin-top: 2%;
+  box-shadow: 0 10px 20px -9px rgba(0, 0, 0, 0.75);
+  background-color: white;
+  margin-left: 30%;
+  width: 40%;
+  border-radius: 15px;
 }
 
 .date {
-	margin-top: 3%;
-	margin-left: 70%;
-	width: 15%;
+  margin-top: 3%;
+  margin-left: 70%;
+  width: 15%;
 }
 
 .content {
-	background-color: white;
-	margin-left: 15%;
-	width: 68%;
-	box-shadow: 0 10px 20px -9px rgba(0,0,0,.75);
-	border-radius: 10px;
-	padding: 1%;
+  background-color: white;
+  margin-left: 15%;
+  width: 68%;
+  box-shadow: 0 10px 20px -9px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  padding: 1%;
 }
 
 .files {
-	margin-top: 2%;
-	background-color: white;
-	margin-left: 15%;
-	width: 70%;
-	box-shadow: 0 10px 20px -9px rgba(0,0,0,.75);
-	border-radius: 10px;
-	padding-top: 1%;
-	padding-bottom: 1%;
-	margin-bottom: 10%;
+  margin-top: 2%;
+  background-color: white;
+  margin-left: 15%;
+  width: 70%;
+  box-shadow: 0 10px 20px -9px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  margin-bottom: 10%;
 }
 
 h1 {
-	padding-top: 1%;
-	padding-bottom: 1%;
+  padding-top: 1%;
+  padding-bottom: 1%;
 }
 
 h2 {
-	font-weight: normal;
-	font-size: 120%;
-	background-color: white;
-	padding-top: 1%;
-	padding-bottom: 1%;
-	box-shadow: 0 10px 20px -9px rgba(0,0,0,.75);
-	border-radius: 10px;	
+  font-weight: normal;
+  font-size: 120%;
+  background-color: white;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  box-shadow: 0 10px 20px -9px rgba(0, 0, 0, 0.75);
+  border-radius: 10px;
 }
 
 a {
-	text-decoration: none;
-	color: #1a73e8;
+  text-decoration: none;
+  color: #1a73e8;
 }
 
 a:hover {
-	color: blue;
+  color: blue;
 }
 
 .home {
-	font-weight: bolder;
-	background-color: white;
-	width: 10%;
-	padding-top: 0.3%;
-	padding-bottom: 0.3%;
-	border-radius: 10px;
-	box-shadow: 0 10px 20px -9px rgba(0,0,0,.75);
-	margin-top: 2%;
-	margin-left: 2%;
+  font-weight: bolder;
+  background-color: white;
+  width: 10%;
+  padding-top: 0.3%;
+  padding-bottom: 0.3%;
+  border-radius: 10px;
+  box-shadow: 0 10px 20px -9px rgba(0, 0, 0, 0.75);
+  margin-top: 2%;
+  margin-left: 2%;
 }
 
 .home:hover {
-	cursor: pointer;
+  cursor: pointer;
+}
+
+.deleteBtn {
+  margin-left: 65%;
+  border: none;
+  background-color: white;
+  color: #1a73e8;
+  width: 5%;
+  border-radius: 5px;
+}
+
+.deleteBtn:hover {
+  cursor: pointer;
 }

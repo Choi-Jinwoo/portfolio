@@ -1,56 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="portfolio" content="portfolio management service">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>portFolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="portfolio" content="portfolio management service" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>portFolio</title>
 
-	<link rel="stylesheet" type="text/css" href="showEvent.css">
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script src="showEvent.js"></script>	
-</head>
-<script>
-	if (!localStorage.token) {
-		location.href="http://127.0.0.1:5500/login/login.html";
-	}
-</script>
-<body>
-	<div class="home" onclick='location.href = "http://127.0.0.1:5500/event/showEvents.html"'>
-		portFolio
-	</div>
-	<button class="deleteBtn" id="deleteBtn">
-		삭제
-	</button>
-	<div class="event_form">
-		<div class="title">
-			<h1 id="title">TITLE</h1>
-		</div>
+    <link rel="stylesheet" type="text/css" href="showEvent.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="showEvent.js"></script>
+  </head>
+  <script>
+    if (!localStorage.token) {
+      location.href = "http://127.0.0.1:5500/frontend/login/login.html";
+    }
+  </script>
+  <body>
+    <div
+      class="home"
+      onclick='location.href = "http://127.0.0.1:5500/frontend/event/showEvents.html"'
+    >
+      portFolio
+    </div>
+    <button class="deleteBtn" id="deleteBtn">
+      삭제
+    </button>
+    <div class="event_form">
+      <div class="title">
+        <h1 id="title">TITLE</h1>
+      </div>
 
-		<div class="date">
-			<h2 id="start_date">start_date</h2>
-			<h2 id="end_date">end_date</h2>
-		</div>
+      <div class="date">
+        <h2 id="start_date">start_date</h2>
+        <h2 id="end_date">end_date</h2>
+      </div>
 
-		<div class="content" id="content">
-			content
-		</div>
+      <div class="content" id="content">
+        content
+      </div>
 
-		<div class="files" id="files">
-			download
-		</div>
-	</div>
-</body>
+      <div class="files" id="files">
+        download
+      </div>
+    </div>
+  </body>
 </html>
 
-
 <script>
-	const id = showEvent();
-	console.log(id);
-	// const deleteBtn = document.getElementById("deleteBtn");
-	// console.log(deleteBtn);
-	// console.log(id);
-	// deleteBtn.addEventListener('click', deleteEvent(id));
+  showEvent()
+    .then(id => {
+      const deleteBtn = document.getElementById("deleteBtn");
+      deleteBtn.addEventListener("click", () => {
+        deleteEvent(id);
+      });
+    })
+    .catch(err => {});
 </script>
-

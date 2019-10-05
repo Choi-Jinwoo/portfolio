@@ -1,49 +1,66 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<meta name="portfolio" content="portfolio management service">
-	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	<title>portFolio</title>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="portfolio" content="portfolio management service" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>portFolio</title>
 
-	<link rel="stylesheet" type="text/css" href="addEvent.css">
-	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-	<script src="addEvent.js"></script>	
-</head>
-<script>
-	if (!localStorage.token) {
-		location.href="http://127.0.0.1:5500/login/login.html";
-	}
-	
-</script>
-<body>
-		<button class="save" id="save">저장</button>
-	<div class="add_container">
-		<div class="title">
-			<input type="text" name="title" id="title" autocomplete=off>
-		</div>
-		<div class="date_form">
-			<input type="text" name="start_date" id="start_date" class="start_date" placeholder="시작날짜(2003-08-28)" autocomplete=off>
-			<input type="text" name="end_date" id="end_date" class="end_date" placeholder="끝 날짜(2003-08-28)" autocomplete=off>
-		</div>
-		<div class="content_form">
-			<textarea name="content" id="" class="content" cols="160" rows="10"></textarea>
-		</div>
-		<div class="upload_form">
-			<form id="FILE_FORM" action="" method="post">
-					<label for="files" class="upload_label">업로드</label>
-					<input multiple="multiple"  type="file" id="files" name="files" />
-			</form>
-		</div>
-	</div>
-
-</body>
+    <link rel="stylesheet" type="text/css" href="addEvent.css" />
+    <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+    <script src="addEvent.js"></script>
+  </head>
+  <script>
+    if (!localStorage.token) {
+      location.href = "http://127.0.0.1:5500/frontend/login/login.html";
+    }
+  </script>
+  <body>
+    <button class="save" id="save">저장</button>
+    <div class="add_container">
+      <div class="title">
+        <input type="text" name="title" id="title" autocomplete="off" />
+      </div>
+      <div class="date_form">
+        <input
+          type="text"
+          name="start_date"
+          id="start_date"
+          class="start_date"
+          placeholder="시작날짜(2003-08-28)"
+          autocomplete="off"
+        />
+        <input
+          type="text"
+          name="end_date"
+          id="end_date"
+          class="end_date"
+          placeholder="끝 날짜(2003-08-28)"
+          autocomplete="off"
+        />
+      </div>
+      <div class="content_form">
+        <textarea
+          name="content"
+          id=""
+          class="content"
+          cols="160"
+          rows="10"
+        ></textarea>
+      </div>
+      <div class="upload_form">
+        <form id="FILE_FORM" action="" method="post">
+          <label for="files" class="upload_label">업로드</label>
+          <input multiple="multiple" type="file" id="files" name="files" />
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
 
 <script>
-		const saveBtn = document.getElementById("save");
-	
-		saveBtn.addEventListener('click', addEvent);
-		
-	</script>
+  const saveBtn = document.getElementById("save");
+
+  saveBtn.addEventListener("click", addEvent);
+</script>
