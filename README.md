@@ -1,7 +1,7 @@
 # portfolio
 포트폴리오 관리 프로그램
 
-# backend
+* # backend
 
 ## config
 
@@ -28,5 +28,5 @@
 >node app.js
 >```
 
-# frontend
+* # frontend
 > * start with login.html
